@@ -1,32 +1,40 @@
-// script.js
+// DARK MODE TOGGLE
 
-function showAlert(){
-    alert("Thanks for visiting Arshia's portfolio ✨");
+function darkMode() {
+
+    document.body.classList.toggle("light-mode");
+
 }
 
-function sendMsg(){
-    document.getElementById("message").innerHTML =
-    "Message sent successfully 🚀";
+
+// HIRE ME BUTTON
+
+function showAlert() {
+
+    alert("Thanks for visiting my portfolio ✨");
+
 }
 
-function scrollProjects(){
+
+// SCROLL TO PROJECTS
+
+function scrollProjects() {
+
     document.getElementById("projects")
-    .scrollIntoView({
-        behavior:"smooth"
-    });
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
 }
 
-function darkMode(){
 
-    if(document.body.style.background === "white"){
+// CONTACT MESSAGE
 
-        document.body.style.background = "#0f172a";
-        document.body.style.color = "white";
+function sendMsg() {
 
-    }
-    else{
+    let message = document.getElementById("message");
 
-        document.body.style.background = "white";
-        document.body.style.color = "black";
-    }
+    message.innerHTML =
+        "✨ Message sent successfully!";
+
 }
